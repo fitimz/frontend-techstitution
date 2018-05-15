@@ -1,76 +1,83 @@
-<html> 
+<html>
 	<head>
       <!-- Metadata -->
-      <title>Techstitution</title>
-     	 <link type="text/css" rel="stylesheet" href="style.css" />
-     	 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-     	 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-   </head>
+			<title>Techstitution</title>
+
+
+			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+			<script type="text/javascript" src="validate/jquery-1.11.1.js"></script>
+			<script type="text/javascript" src="validate/jquery.validate.js"></script>
+			<link href="style.css" rel="stylesheet" type="text/css">
+
+
+	 </head>
 
    		<body>
      		   <div class="container">
+						  <form id="commitContract" method="post" action="">
                        		  <div class="row">
                                      	   <div class="col-md-2">
-                                          
+
                                         	</div>
-                                  
+
 
                                          <div class="col-md-8 text-center mt-5">
-                                           
+
                                                 <h1 id="titulli"> Shto kontratën e re </h1>
                                          </div>
 
-                                       
+
                                          <div class="col-md-2">  </div>
                             </div>
 
 
                             <div class="row mt-4">
                                        <div class="col-md-2"> </div>
-                                
+
 
                                        <div class="col-md-4">
-                                        
+
                                            <h2 id="titulli2"> Prokurimi: </h2>
 
                                         </div>
 
-                                     
+
                                        <div class="col-md-4"> </div>
-                                      
+
                                        <div class="col-md-2"> </div>
 
-                                        
+
                                          <div class="col-md-2">  </div>
-                                
+
 
                                        <div class="col-md-4">
-                                            
+
                                                  <div class="form-group">
                                                       <label for="nrrendor">Nr. rendor i prokurimit </label>
-                                                      <input type="number" class="form-control" id="nrrendor" placeholder="Nr. rendor i prokurimit">
+                                                      	<input type="number" class="form-control" id="nrRendor" name="nrRendor" pattern="[0-9]" min="0" placeholder="Nr rendor i prokurimit" />
                                                   </div>
                                         </div>
 
-                                           
+
                                              <div class="col-md-4">
                                                     <div class="form-group">
                                                           <label for="llojiprokurimit">Lloji i prokurimit </label>
-                                                          <input type="text" class="form-control" id="llojiprokurimit" placeholder="Lloji i prokurimit">
+                                                          <input type="text" class="form-control" id="llojiProkurimit" name="llojiProkurimit" placeholder="Lloji i prokurimit">
                                                     </div>
                                               </div>
-                                            
+
                                              <div class="col-md-2"> </div>
 
                                         <div class="col-md-2"> </div>
-                                        
+
                                         <div class="col-md-8">
                                                 <div class="form-group">
                                                       <label for="aktivitetiprokurimit">Aktiviteti i prokurimit </label>
-                                                      <input type="text" class="form-control" id="aktivitetiprokurimit" placeholder="Aktiviteti i prokurimit">
+                                                      <input type="text" class="form-control" id="aktivitetiProkurimit" name="aktivitetiProkurimit" placeholder="Aktiviteti i prokurimit">
                                                </div>
                                        </div>
-                                          
+
                                           <div class="col-md-2">
                                            </div>
                   		       </div>
@@ -78,61 +85,62 @@
                             <div class="row mt-4">
                                           <div class="col-md-2"> </div>
                                            <div class="col-md-4"> <h2 id="titulli2"> Datat: </h2> </div>
-                                          
-                                             <div class=" col-md-4 "> </div> 
 
-                                             <div class="col-md-2">   </div>   
+                                             <div class=" col-md-4 "> </div>
+
+                                             <div class="col-md-2">   </div>
 
 
                                             <div class="col-md-2"> </div>
                                                    <div class="col-md-4">
 
-                                                        <div class="form-group">
-                                                          <label for="datainicimit"> Data e inicimit të prokurimit</label>
-                                                          <input type="date" class="form-control" id="datainicimit" >
-                                                        </div>
+																										 <div class="form-group">
+																													 <label for="dataInicimit">Data e inicimit te aktivitetit te prokurimit</label>
+																													 <input type="date" class="form-control" id="dataInicimit" name="dataInicimit">
+
+																										</div>
                                                   </div>
-                                              
-                                             <div class=" col-md-4 "> 
+
+                                             <div class=" col-md-4 ">
                                                     <div class="form-group">
                                                       <label for="datashpalljes"> Data e publikimit të shpalljes</label>
-                                                      <input type="date" class="form-control" id="datashpalljes" >
+                                                      <input type="date" class="form-control" id="dataPublikimit" name="dataPublikimit">
                                                     </div>
-                                              </div> 
+                                              </div>
 
-                                             <div class="col-md-2">   </div>  
+                                             <div class="col-md-2">   </div>
 
 
                                             <div class="col-md-2"> </div>
-                                        
+
                                         <div class="col-md-8">
                                                 <div class="form-group">
                                                       <label for="datanenshkrimit">Data e nënshkrimit të kontratës </label>
-                                                      <input type="date" class="form-control" id="datanenshkrimit">
+                                                      <input type="date" class="form-control" id="dataeNenshkrimit" name="dataeNenshkrimit">
                                                </div>
                                        </div>
-                                          
+
                                           <div class="col-md-2">
                                            </div>
 
 
                                           <div class="col-md-2"> </div>
-                                        
+
                                         <div class="col-md-4">
                                                 <div class="form-group">
-                                                      <label for="afati1">Afatet për implementimin e kontratës</label>
-                                                      <input type="date" class="form-control" id="afati1">
-                                                      
+                                                      <label for="afati2">Afatet për implementimin e kontratës</label>
+                                                      <input type="date" class="form-control" id="afati2" name="afati1">
+
                                                </div>
                                        </div>
-                                          
+
                                           <div class="col-md-4 mt-4">
                                             <div class="form-group">
-                                                      <label for="afati1"></label>
-                                                      <input type="date" class="form-control" id="afati2" >
-                                                      
+                                                      <label for="afati3"></label>
+                                                      <input type="date" class="form-control" id="afati3" name="afati3">
+
                                                </div>
-                                                <div class="col-md-2"> </div> 
+                                                <div class="col-md-2"> </div>
                                            </div>
 
 
@@ -140,72 +148,197 @@
                                            </div>
                                            <div class="col-md-2">
                                            </div>
-                                           
+
                                            <div class="col-md-8">
                                              <div class="form-group">
-                                                                    <label for="datapermbylljes">Data e përmbylljes së kontratës (data e pranimit të përkohshëm/preliminar) </label>
-                                                                    <input type="date" class="form-control" id="datapermbylljes"> 
+                                                <label for="datapermbylljes">Data e përmbylljes së kontratës (data e pranimit të përkohshëm/preliminar) </label>
+                                                <input type="date" class="form-control" id="datapermbylljes" name="dataPermbylljes">
                                                              </div>
                                            </div>
                                             <div class="col-md-2">
                                            </div>
-                                           <!--  -->
+
 
                                  </div>
-                                                  <div class="row mt-4" > 
-                                                           <div class="col-md-2"> </div>     
+                                                  <div class="row mt-4" >
+                                                           <div class="col-md-2"> </div>
                                                             <div class="col-md-8 "> <h2 id="titulli2"> Qmimi dhe të dhënat tjera: </h2> </div>
                                                             <div class="col-md-2"> </div>
 
 
                                                             <div class="col-md-2"></div>
                                                                  <div class="col-md-4 ">
-                                                                      <div class="form-group"> Qmimi i kontratës (duke perfshirë të gjitha taksat)
-                                                                       <label for="qmimikontrates"></label>
-                                                                        <input type="text" class="form-control" id="qmimikontrates" placeholder="Qmimi i kontrates">
+                                                                      <div class="form-group">
+                                                                       <label for="qmimikontrates">Qmimi i kontratës (duke perfshirë të gjitha taksat)</label>
+                                                                        <input type="number" class="form-control" id="qmimiKontrates" name="qmimiKontrates" placeholder="Qmimi i kontrates" >
                                                                      </div>
                                                                  </div>
-                                                              
+
                                                                   <div class="col-md-4">
                                                                     <div class="form-group">
                                                                          <label for="qmimitotal">Qmimi total i paguar për kontratën   </label>
-                                                                       <input type="text" class="form-control" id="qmimitotal" placeholder="Qmimi total i paguar për kontratën">
+                                                                       <input type="number" class="form-control" id="qmimiTotal" name="qmimiTotal" placeholder="Qmimi total i paguar për kontratën" >
                                                                       </div>
                                                                    </div>
                                                                   <div class="col-md-2"></div>
 
-                                                                   <div class="col-md-2"> </div>     
+                                                                   <div class="col-md-2"> </div>
                                                             <div class="col-md-8 ">
 
                                                                     <div class="form-group">
                                                                        <label for="emriifirmes"> Emri i të cilit është dhënë kontrata</label>
-                                                                      <input type="text" class="form-control" id="emriifirmes" placeholder="Emri dhe Mbiemri">
+                                                                      <input type="text" class="form-control" id="emriiFirmes" name="emriiFirmes" placeholder="Emri dhe Mbiemri" >
+
                                                                  </div>
                                                              </div>
-                                                      </div> 
+                                                      </div>
                                   </br>
                                                              <div class="row">
                                                                     <div class="col-md-2"></div>
                                                                     <div class="col-md-4">
                                                                       <!-- <form class="form-group"> -->
-                                                                      <button type="button" class="btn btn-primary btn-block " value="submit" >DËRGO</button>
+                                                                      <button type="submit" class="btn btn-primary btn-block " value="submit" >DËRGO</button>
 
                                                                      <!-- </form> -->
                                                                     </div>
                                                                     <div class="col-md-4">
-                                                                        <button type="button" class="btn btn-basic btn-block" value="delete">FSHIJ</button>
+                                                                        <button type="reset" class="btn btn-basic btn-block" value="reset">FSHIJ</button>
                                                                     </div>
                                                                     <div class="col-md-2"></div>
                                                             </div>
-                                                            
+
                                                             </BR>
                                                             </BR>
                                                             </BR>
-                                                            
-                             </div>
+
+                   </div>
 
 
-            </div> 
+            </div>
+
+
+
+					<script type="text/javascript">
+	$.validator.setDefaults( {
+		submitHandler: function () {
+			alert( "submitted!" );
+		}
+	} );
+						$( document ).ready( function () {
+						$( "#commitContract" ).validate( {
+						rules: {
+						  nrRendor: {
+						    required: true,
+								maxlength: 5
+						  },
+						  llojiProkurimit: {
+						    required: true,
+						    minlength: 3
+						  },
+						  aktivitetiProkurimit: {
+						    required: true,
+						    minlength: 3
+						  },
+							dataInicimit: {
+						    required: true,
+
+						  },
+						  dataPublikimit: {
+						    required: true,
+						    minlength: 3
+						  },
+						  dataeNenshkrimit: {
+						    required: true,
+						    minlength: 3
+						  },
+						  afati1: {
+						    required: true,
+						    minlength: 3
+						  },
+						  afati2: {
+						    required: true,
+						    minlength: 3
+						  },
+							afati3: {
+							 required: true,
+							 minlength: 3
+						 },
+						  dataPermbylljes: {
+						    required: true,
+						    minlength: 3
+						  },
+							qmimiKontrates: {
+						    required: true,
+
+						  },
+							qmimiTotal: {
+						    required: true,
+
+						  },
+							emriiFirmes: {
+						    required: true,
+
+						  },
+						},
+
+						errorElement: "em",
+						errorPlacement: function ( error, element ) {
+						// Add the `help-block` class to the error element
+						error.addClass( "help-block" );
+
+						if ( element.prop( "type" ) === "checkbox" ) {
+						  error.insertAfter( element.parent( "label" ) );
+						} else {
+						  error.insertAfter( element );
+						}
+						},
+						highlight: function ( element, errorClass, validClass ) {
+						$( element ).parents( ".col-sm-5" ).addClass( "has-error" ).removeClass( "has-success" );
+						},
+						unhighlight: function (element, errorClass, validClass) {
+						$( element ).parents( ".col-sm-5" ).addClass( "has-success" ).removeClass( "has-error" );
+						}
+						} );
+						$( "#commitContract" ).validate( {
+						rules: {},
+						messages: {},
+						errorElement: "em",
+						errorPlacement: function ( error, element ) {
+						// Add the `help-block` class to the error element
+						error.addClass( "help-block" );
+
+						// Add `has-feedback` class to the parent div.form-group
+						// in order to add icons to inputs
+						element.parents( ".col-sm-5" ).addClass( "has-feedback" );
+
+						if ( element.prop( "type" ) === "checkbox" ) {
+						error.insertAfter( element.parent( "label" ) );
+						} else {
+						error.insertAfter( element );
+						}
+
+						// Add the span element, if doesn't exists, and apply the icon classes to it.
+						if ( !element.next( "span" )[ 0 ] ) {
+						$( "<span class='glyphicon glyphicon-remove form-control-feedback'></span>" ).insertAfter( element );
+						}
+						},
+						success: function ( label, element ) {
+						// Add the span element, if doesn't exists, and apply the icon classes to it.
+						if ( !$( element ).next( "span" )[ 0 ] ) {
+						$( "<span class='glyphicon glyphicon-ok form-control-feedback'></span>" ).insertAfter( $( element ) );
+						}
+						},
+						highlight: function ( element, errorClass, validClass ) {
+						$( element ).parents( ".col-sm-5" ).addClass( "has-error" ).removeClass( "has-success" );
+						$( element ).next( "span" ).addClass( "glyphicon-remove" ).removeClass( "glyphicon-ok" );
+						},
+						unhighlight: function ( element, errorClass, validClass ) {
+						$( element ).parents( ".col-sm-5" ).addClass( "has-success" ).removeClass( "has-error" );
+						$( element ).next( "span" ).addClass( "glyphicon-ok" ).removeClass( "glyphicon-remove" );
+						}
+						} );
+						} );
+</script>
    		</body>
 
 </html>
